@@ -1,0 +1,17 @@
+.icon {
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.light {
+    background-image: url('./../../../assets/icons/light_icon.svg');
+  }
+  &.dark {
+    background-image: url('./../../../assets/icons/dark_icon.svg');
+  }
+  &.modern {
+    background-image: url('./../../../assets/icons/modern_icon.svg');
+  }
+}

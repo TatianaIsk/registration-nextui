@@ -16,7 +16,9 @@
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-svg": "^16.1.28"
+    "react-svg": "^16.1.28",
+    "sass": "^1.69.0",
+    "vite-plugin-svgr": "^4.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

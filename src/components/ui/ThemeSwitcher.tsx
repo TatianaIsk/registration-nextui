@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useTheme, ThemeProvider } from 'next-themes';
+import { useTheme } from 'next-themes';
 
-import BaseButton from './Button';
+import RootButton from './RootButton';
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -14,12 +14,16 @@ export default function ThemeSwitcher() {
   if (!mounted) return null;
 
   return (
-    <ThemeProvider>
-      <div className='flex gap-4'>
-        <BaseButton onClick={() => setTheme('light')}></BaseButton>
-        <BaseButton onClick={() => setTheme('dark')}>Dark</BaseButton>
-        <BaseButton onClick={() => setTheme('modern')}>Modern</BaseButton>
-      </div>
-    </ThemeProvider>
+    <div className='flex gap-4'>
+      <RootButton size='sm' onClick={() => setTheme('light')}>
+        Light
+      </RootButton>
+      <RootButton size='sm' onClick={() => setTheme('dark')}>
+        Dark
+      </RootButton>
+      <RootButton size='sm' onClick={() => setTheme('modern')}>
+        Modern
+      </RootButton>
+    </div>
   );
 }
