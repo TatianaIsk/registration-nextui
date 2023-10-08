@@ -15,15 +15,9 @@ export default function ThemeSwitcher() {
 
   return (
     <div className='flex gap-4'>
-      <RootButton size='sm' onClick={() => setTheme('light')}>
-        Light
-      </RootButton>
-      <RootButton size='sm' onClick={() => setTheme('dark')}>
-        Dark
-      </RootButton>
-      <RootButton size='sm' onClick={() => setTheme('modern')}>
-        Modern
-      </RootButton>
+      <RootButton size='sm' iconName='light' onClick={() => setTheme('light')}/>
+      <RootButton size='sm' iconName='dark' onClick={() => setTheme('dark')}/>
+      <RootButton size='sm' iconName='modern' onClick={() => setTheme('modern')}/>
     </div>
   );
 }
