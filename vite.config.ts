@@ -5,7 +5,7 @@ import svgr from 'vite-plugin-svgr';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/admin-panel',
+  base: '/',
   resolve: {
     alias: {
       '@': '/src/components/ui',

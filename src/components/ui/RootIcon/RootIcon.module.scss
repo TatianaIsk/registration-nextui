@@ -1,6 +1,6 @@
 .icon {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,4 +14,8 @@
   &.modern {
     background-image: url('./../../../assets/icons/modern_icon.svg');
   }
+}
+
+.iconDark {
+  filter: invert(1);
 }

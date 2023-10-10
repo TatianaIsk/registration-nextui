@@ -1,0 +1,30 @@
+.image {
+  background-image: url('./../../../assets/picture_registration.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.imageDark {
+  filter: invert(1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}

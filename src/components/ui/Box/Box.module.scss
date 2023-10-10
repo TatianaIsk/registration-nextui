@@ -1,0 +1,16 @@
+.box {
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.boxDark {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  max-width: 700px;
+	background: rgba(75, 126, 221, 0.147)
+}

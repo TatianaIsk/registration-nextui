@@ -18,16 +18,19 @@ module.exports = {
     nextui({
       themes: {
         light: {
-          layout: {}, 
-          colors: {}, 
+          layout: {},
+          colors: {},
         },
         dark: {
-          layout: {}, 
-          colors: {}, 
+          layout: {},
+          colors: {
+            white: '#ffffff',
+          },
         },
         modern: {
-          extend: 'dark', 
+          extend: 'dark',
           colors: {
+            white: '#ffffff',
             background: '#0D001A',
             foreground: '#ffffff',
             primary: {
