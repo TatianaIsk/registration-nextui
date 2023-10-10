@@ -26,39 +26,10 @@ export const BaseInput = extendVariants(Input, {
         ],
         input: ['text-white', 'placeholder:text-gray-600', 'dark:text-gray-400', 'dark:placeholder:text-gray-600'],
       },
-    },
-    size: {
-      xs: {
-        inputWrapper: 'h-8 min-h-8 px-2',
-        input: 'text-xs',
+      light: {
+        inputWrapper: ['bg-white', 'border', 'shadow', 'transition-colors', 'focus-within:bg-white', 'hover:border-black', 'hover:bg-white', 'group-focus:border-black'],
+        input: ['text-black', 'placeholder:text-gray-400'],
       },
-      md: {
-        inputWrapper: 'h-10 min-h-10',
-        input: 'text-sm',
-      },
-      xl: {
-        inputWrapper: 'h-12 min-h-12',
-        input: 'text-base',
-      },
-    },
-    radius: {
-      xs: {
-        inputWrapper: 'rounded-sm',
-      },
-      sm: {
-        inputWrapper: 'rounded-md',
-      },
-    },
-    textSize: {
-      base: {
-        input: 'text-base',
-      },
-    },
-    removeLabel: {
-      true: {
-        label: 'hidden',
-      },
-      false: {},
     },
   },
   defaultVariants: {

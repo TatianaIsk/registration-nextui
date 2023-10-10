@@ -1,6 +1,6 @@
 .box {
   display: grid;
-  padding: 15px;
+  padding: 20px;
   grid-template-columns: 1fr 1fr;
   border-radius: 20px;
   max-width: 700px;
@@ -8,9 +8,10 @@
 }
 
 .boxDark {
-	display: grid;
+  display: grid;
+  padding: 20px;
   grid-template-columns: 1fr 1fr;
   border-radius: 20px;
-  max-width: 700px;
-	background: rgba(75, 126, 221, 0.147)
+  width: 700px;
+  background: rgba(75, 126, 221, 0.147);
 }

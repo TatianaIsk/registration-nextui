@@ -14,9 +14,15 @@ const Box: React.FC<BoxProps> = ({ children, className }) => {
 
   const isLight = theme === 'light';
 
-  return <div className={clsx(s.box, className,  {
-    [s.boxDark]: isLight || '',
-  })}>{children}</div>;
+  return (
+    <div
+      className={clsx(s.box, className, {
+        [s.boxDark]: isLight || '',
+      })}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Box;
