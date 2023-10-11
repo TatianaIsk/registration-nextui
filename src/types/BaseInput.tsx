@@ -4,6 +4,7 @@ import { extendVariants, Input } from '@nextui-org/react';
 export interface RootInputProps extends ComponentPropsWithRef<typeof BaseInput> {
   className?: string;
   labelPlaceholder: string;
+  inputRef: React.RefObject<HTMLInputElement>;
 }
 
 export const BaseInput = extendVariants(Input, {

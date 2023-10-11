@@ -40,13 +40,13 @@ const Registration = () => {
         <div className={s.content}>
           <h1 className={s.heading}>Registration</h1>
           <div className={s.inputs}>
-            <RootInput type='text' labelPlaceholder='Login' radius='full' ref={loginRef} />
-            <RootInput type='text' labelPlaceholder='Password' radius='full' ref={passwordRef} />
-            <RootInput type='text' labelPlaceholder='Confim password' radius='full' ref={confirmPasswordRef} />
+            <RootInput type='text' labelPlaceholder='Login' radius='full' inputRef={loginRef} />
+            <RootInput type='text' labelPlaceholder='Password' radius='full' inputRef={passwordRef} />
+            <RootInput type='text' labelPlaceholder='Confim password' radius='full' inputRef={confirmPasswordRef} />
             {passwordError && <p className={s.error}>{passwordError}</p>}
           </div>
           <RootButton radius='full' onClick={handleRegister}>
-            Кнопка
+            Sing up
           </RootButton>
         </div>
       </Box>

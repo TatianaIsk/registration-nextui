@@ -21,7 +21,7 @@
   padding: 2rem;
 }
 
-.heading{
+.heading {
   font-size: 24px;
   margin-bottom: 1.5rem;
 }
@@ -36,4 +36,11 @@
 
 .box {
   width: 900px;
+}
+
+.error {
+  position: absolute;
+  bottom: 245px;
+  color: red;
+  font-size: 12px;
 }
