@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react';
 import { useTheme } from 'next-themes';
 
-import Box from '../../ui/Box';
-import RootButton from '../../ui/RootButton';
-import RootInput from '../../ui/RootInput';
-
-import clsx from 'clsx';
+import Box from '../../components/ui/Box';
+import RootButton from '../../components/ui/RootButton';
+import RootInput from '../../components/ui/RootInput';
+import Image from '../../components/ui/Image/Image';
 
 import s from './Registration.module.scss';
+import ParticlesAnimation from '../../components/ui/ParticlesAnimation/ParticlesAnimation';
 
 const Registration = () => {
   const { theme } = useTheme();
@@ -31,12 +31,9 @@ const Registration = () => {
 
   return (
     <div className='container flex items-center justify-center'>
+      <ParticlesAnimation />
       <Box className={s.box}>
-        <div
-          className={clsx(s.image, {
-            [s.imageDark]: isDark || '',
-          })}
-        />
+        <Image isDark={isDark} />
         <div className={s.content}>
           <h1 className={s.heading}>Registration</h1>
           <div className={s.inputs}>
