@@ -15,6 +15,7 @@ const Registration = () => {
   const passwordRef = useRef<HTMLInputElement>(null);
   const confirmPasswordRef = useRef<HTMLInputElement>(null);
   const [passwordError, setPasswordError] = useState('');
+  const [disabled, setDisabled] = useState(false);
 
   const isDark = theme === 'dark' || theme === 'modern';
 
@@ -24,7 +25,9 @@ const Registration = () => {
 
     if (password !== confirmPassword) {
       setPasswordError('Passwords do not match');
+      setDisabled(true);
     } else {
+      setDisabled(false);
       setPasswordError('');
     }
   };
@@ -42,7 +45,7 @@ const Registration = () => {
             <RootInput type='text' labelPlaceholder='Confim password' radius='full' inputRef={confirmPasswordRef} />
             {passwordError && <p className={s.error}>{passwordError}</p>}
           </div>
-          <RootButton radius='full' onClick={handleRegister}>
+          <RootButton radius='full' onClick={handleRegister} disabled={disabled}>
             Sing up
           </RootButton>
         </div>
